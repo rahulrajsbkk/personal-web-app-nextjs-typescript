@@ -1,0 +1,47 @@
+@import "../../styles/mixin";
+
+.footer {
+  height: 60px;
+  min-height: 60px;
+  border-top: 1px solid white;
+  background: black;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .socialBtns {
+    display: flex;
+    .socialIcon {
+      height: 22px;
+      width: 22px;
+      margin-right: 40px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .footerText {
+    font-size: 16px;
+    color: white;
+  }
+  @include mdportrait {
+    height: fit-content;
+    min-height: unset;
+    border-top: 1px solid white;
+    background: black;
+    padding: 2% 10%;
+    flex-direction: column;
+    .socialBtns {
+      display: flex;
+      .socialIcon {
+        height: 22px;
+        width: 22px;
+        margin: 15px;
+      }
+    }
+    .footerText {
+      text-align: center;
+    }
+  }
+}
