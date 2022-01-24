@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import classNames from "./AboutSection.module.scss";
 import AboutMySkills from "../AboutMySkills";
+import AboutExperienceAndEducation from "../AboutExperienceAndEducation";
 
 function AboutSection(): JSX.Element {
   return (
@@ -116,6 +117,7 @@ function AboutSection(): JSX.Element {
         </div>
       </div>
       <AboutMySkills />
+      <AboutExperienceAndEducation />
     </section>
   );
 }
