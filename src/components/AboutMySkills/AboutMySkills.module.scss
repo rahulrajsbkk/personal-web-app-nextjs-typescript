@@ -56,4 +56,26 @@
       }
     }
   }
+  @include mdportrait {
+    .title {
+      font-size: 30px;
+    }
+    .skills {
+      .skillCard {
+        flex: 0 0 45%;
+        margin-bottom: 70px;
+        .svgWrap {
+          width: 65%;
+          .percent {
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+        .label {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }
