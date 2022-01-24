@@ -146,6 +146,7 @@
   @include mdportrait {
     padding: 0 5%;
     padding-top: 90px;
+    padding-bottom: 80px;
     .title {
       font-size: 65px;
       .inTitle {
@@ -189,6 +190,7 @@
         margin-top: 30px;
         width: 100%;
         flex: unset;
+        justify-content: space-between;
         .card {
           padding: 20px 8%;
           .count {

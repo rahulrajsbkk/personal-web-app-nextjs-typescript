@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 
+import contactFormReducer from "./contactFormSlice";
+
 export function makeStore() {
   return configureStore({
-    reducer: {},
+    reducer: { message: contactFormReducer },
   });
 }
 
