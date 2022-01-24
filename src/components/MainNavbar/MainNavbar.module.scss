@@ -18,7 +18,11 @@
     padding: 0 10%;
     .logo {
       margin-right: 5%;
-      width: 80px;
+      height: 80%;
+      svg {
+        height: 100%;
+        width: auto;
+      }
     }
     .navMenu {
       height: 100%;
