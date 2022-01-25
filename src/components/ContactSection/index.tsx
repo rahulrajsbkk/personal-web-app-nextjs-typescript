@@ -58,7 +58,7 @@ function ContactSection(): JSX.Element {
           <div className={classNames.item}>
             <div className={classNames.icon}>
               <Image
-                src="/assets/icons/mapsBlue.png"
+                src="/assets/icons/phoneBlue.png"
                 alt=""
                 width={128}
                 height={128}
