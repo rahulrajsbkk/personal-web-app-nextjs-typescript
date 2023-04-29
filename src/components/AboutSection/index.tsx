@@ -3,6 +3,7 @@ import Image from "next/image";
 import classNames from "./AboutSection.module.scss";
 import AboutMySkills from "../AboutMySkills";
 import AboutExperienceAndEducation from "../AboutExperienceAndEducation";
+import data from "./data.json";
 
 function AboutSection(): JSX.Element {
   return (
@@ -82,8 +83,9 @@ function AboutSection(): JSX.Element {
           </div>
           <a
             className={classNames.button}
-            href="/assets/downloads/resume.pdf"
-            download
+            href="https://drive.google.com/file/d/1UUIS1fGD8eTYdStEcu7fGalHcbTgtISc/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
           >
             <span className={classNames.btnText}>Download Resume</span>
             <div className={classNames.btnIcon}>
@@ -99,19 +101,19 @@ function AboutSection(): JSX.Element {
         </div>
         <div className={classNames.countCards}>
           <div className={classNames.card}>
-            <div className={classNames.count}>3</div>
+            <div className={classNames.count}>{getExperience()}</div>
             <div className={classNames.label}>YEARS OF EXPERIENCE</div>
           </div>
           <div className={classNames.card}>
-            <div className={classNames.count}>80</div>
+            <div className={classNames.count}>{data.react}</div>
             <div className={classNames.label}>REACT.JS PROJECTS</div>
           </div>
           <div className={classNames.card}>
-            <div className={classNames.count}>6</div>
+            <div className={classNames.count}>{data.reactnative}</div>
             <div className={classNames.label}>REACT-NATIVE PROJECTS</div>
           </div>
           <div className={classNames.card}>
-            <div className={classNames.count}>3</div>
+            <div className={classNames.count}>{data.nodejs}</div>
             <div className={classNames.label}>NODE.JS PROJECTS</div>
           </div>
         </div>
@@ -122,15 +124,24 @@ function AboutSection(): JSX.Element {
   );
 }
 
-function getAge(): number {
+function getDifference(date: Date): number {
   var today = new Date();
-  var birthDate = new Date(894801600000);
-  var age = today.getFullYear() - birthDate.getFullYear();
-  var m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+  var age = today.getFullYear() - date.getFullYear();
+  var m = today.getMonth() - date.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
     age--;
   }
   return age;
+}
+
+function getAge(): number {
+  var birthDate = new Date(894801600000);
+  return getDifference(birthDate);
+}
+
+function getExperience(): number {
+  var joinDate = new Date(1530383400000);
+  return getDifference(joinDate);
 }
 
 export default AboutSection;

@@ -39,7 +39,6 @@ function MainLayout({ children }): JSX.Element {
         )}
         onScrollFrame={(value) => {
           setActiveNav(value?.scrollTop > 300);
-          console.log(`value`, value);
         }}
       >
         <Header />

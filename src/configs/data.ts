@@ -1,5 +1,9 @@
 export const MY_SKILLS = [
   {
+    language: "React Native (JS/TS)",
+    percent: 90,
+  },
+  {
     language: "React.js (JS/TS)",
     percent: 90,
   },
@@ -8,12 +12,8 @@ export const MY_SKILLS = [
     percent: 90,
   },
   {
-    language: "React Native (JS/TS)",
-    percent: 70,
-  },
-  {
     language: "Node.js (JS/TS)",
-    percent: 70,
+    percent: 65,
   },
   // {
   //   language: "Firebase",
@@ -40,7 +40,14 @@ export const MY_SKILLS = [
 export const MY_EXPERIENCE = [
   {
     icon: "/assets/icons/work.png",
-    time: "Jan 2020 - Present",
+    time: "May 2022 - Present",
+    subTitle: "Cloudphysician Healthcare",
+    title: "React-Native Developer",
+    desc: "- React Native",
+  },
+  {
+    icon: "/assets/icons/work.png",
+    time: "Jan 2020 - Apr 2022",
     subTitle: "Nvest Campus",
     title: "Senior Front-End Developer",
     desc: "- React.js,Next.js and React Native",
