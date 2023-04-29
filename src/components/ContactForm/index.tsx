@@ -113,7 +113,7 @@ function ContactForm(): JSX.Element {
         />
         <div className={classNames.btnIcon}>
           <Image
-            src="/assets/icons/download.png"
+            src="/assets/icons/send.png"
             alt=""
             width={256}
             height={256}
