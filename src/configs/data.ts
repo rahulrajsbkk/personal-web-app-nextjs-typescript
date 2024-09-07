@@ -40,7 +40,14 @@ export const MY_SKILLS = [
 export const MY_EXPERIENCE = [
   {
     icon: "/assets/icons/work.png",
-    time: "May 2022 - Present",
+    time: "Aug 2023 - Present",
+    subTitle: "Cloudphysician Healthcare",
+    title: "Technical Lead Mobile Developer",
+    desc: "- React Native",
+  },
+  {
+    icon: "/assets/icons/work.png",
+    time: "May 2022 - Aug 2023",
     subTitle: "Cloudphysician Healthcare",
     title: "React-Native Developer",
     desc: "- React Native",
