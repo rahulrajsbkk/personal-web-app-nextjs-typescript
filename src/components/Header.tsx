@@ -1,12 +1,15 @@
 import React from "react";
 import Head from "next/head";
-import { SITE_TITLE, SITE_DESC } from "../configs";
+import { SITE_TITLE, SITE_DESC, SITE_URL, SITE_IMAGE } from "../configs";
 
 function Header(): JSX.Element {
   return (
     <Head>
       <title>{SITE_TITLE}</title>
       <meta name="description" content={SITE_DESC} />
+      <meta name="keywords" content="Full-Stack Developer, JavaScript, React, React Native, Web Development, Software Engineer, Freelance Developer, Mentor, Programming Tutor, Technology Consultant" />
+      <meta name="author" content="Rahul Raj" />
+      <meta name="robots" content="index, follow" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -34,6 +37,21 @@ function Header(): JSX.Element {
       <meta name="msapplication-TileColor" content="#0b62ff" />
       <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       <meta name="theme-color" content="#ffffff" />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content={SITE_TITLE} />
+      <meta property="og:description" content={SITE_DESC} />
+      <meta property="og:url" content={SITE_URL} />
+      <meta property="og:image" content={SITE_IMAGE} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content={SITE_TITLE} />
+      
+      {/* Twitter Card Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={SITE_TITLE} />
+      <meta name="twitter:description" content={SITE_DESC} />
+      <meta name="twitter:image" content={SITE_IMAGE} />
+      <meta name="twitter:site" content="@YourTwitterHandle" />
     </Head>
   );
 }
