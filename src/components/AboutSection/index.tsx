@@ -31,15 +31,15 @@ function AboutSection(): JSX.Element {
             <div className={classNames.item}>
               Phone:&nbsp;&nbsp;
               <wbr />
-              <a href="tel:+917559861279">
-                <span>+91 7559861279</span>
+              <a href="tel:+918310349909">
+                <span>+91 8310349909</span>
               </a>
             </div>
             <div className={classNames.item}>
               Email:&nbsp;&nbsp;
               <wbr />
-              <a href="mailto:rrsbkk@gmail.com">
-                <span>rrsbkk@gmail.com</span>
+              <a href="mailto:rahulrajsb.developer@gmail.com">
+                <span>rahulrajsb.developer@gmail.com</span>
               </a>
             </div>
             <div className={classNames.item}>
@@ -83,7 +83,7 @@ function AboutSection(): JSX.Element {
           </div>
           <a
             className={classNames.button}
-            href="https://drive.google.com/file/d/1UUIS1fGD8eTYdStEcu7fGalHcbTgtISc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NyV_iiYB3ImVPHtJ0VCFT0o6QS6N_cTF/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >

@@ -50,8 +50,8 @@ function ContactSection(): JSX.Element {
             </div>
             <div className={classNames.texts}>
               <div className={classNames.label}>MAIL ME</div>
-              <a className={classNames.value} href="mailto:rrsbkk@gmail.com">
-                rrsbkk@gmail.com
+              <a className={classNames.value} href="mailto:rahulrajsb.developer@gmail.com">
+                rahulrajsb.developer@gmail.com
               </a>
             </div>
           </div>
@@ -67,8 +67,8 @@ function ContactSection(): JSX.Element {
             </div>
             <div className={classNames.texts}>
               <div className={classNames.label}>CALL ME</div>
-              <a href="tel:+917559861279" className={classNames.value}>
-                <span>+91 7559861279</span>
+              <a href="tel:+918310349909" className={classNames.value}>
+                <span>+91 8310349909</span>
               </a>
             </div>
           </div>
