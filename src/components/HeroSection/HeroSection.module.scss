@@ -26,25 +26,30 @@
       }
     }
     .desc {
-      font-size: 26px;
+      font-size: 20px;
       color: $secondary-color;
     }
-    .btnHireMe {
-      margin-top: 20px;
-      height: 55px;
-      width: fit-content;
-      background: $primary-color;
-      color: white;
-      padding: 0 40px;
-      border: 1px solid $primary-color;
-      font-size: 22px;
+    .btns {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      @include btn-animate($primary-color);
-      &:hover {
-        background: white;
-        color: $primary-color;
+      flex-direction: row;
+      .btnHireMe {
+        margin-top: 20px;
+        height: 55px;
+        width: fit-content;
+        background: $primary-color;
+        color: white;
+        padding: 0 40px;
+        border: 1px solid $primary-color;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        @include btn-animate($primary-color);
+        &:hover {
+          background: white;
+          color: $primary-color;
+        }
       }
     }
   }
@@ -76,13 +81,16 @@
         }
       }
       .desc {
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 1.8;
       }
-      .btnHireMe {
-        margin-top: 10px;
-        height: 40px;
-        padding: 0 30px;
-        font-size: 18px;
+      .btns {
+        .btnHireMe {
+          margin-top: 10px;
+          height: 40px;
+          padding: 0 30px;
+          font-size: 18px;
+        }
       }
     }
     .bg {

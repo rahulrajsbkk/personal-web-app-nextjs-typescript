@@ -17,12 +17,20 @@ function HeroSection() {
           Rahul Raj
         </div>
         <div className={classNames.desc}>
-          Full-stack developer with high expertice in JavaScript and quick
-          learner to any language
+          As a seasoned full-stack developer with deep expertise in JavaScript,
+          I excel in creating dynamic applications using React and React Native.
+          My ability to rapidly learn new technologies ensures I stay ahead of
+          industry trends. I’m dedicated to transforming complex challenges into
+          seamless, user-centric solutions.
         </div>
-        <a href="mailto:rrsbkk@gmail.com" className={classNames.btnHireMe}>
-          Hire Me
-        </a>
+        <div className={classNames.btns}>
+          <a href="mailto:rahulrajsb.developer@gmail.com" className={classNames.btnHireMe}>
+            Email Me
+          </a>
+          <a href="tel:8310349909" className={classNames.btnHireMe}>
+            Call Me
+          </a>
+        </div>
       </div>
       <div className={classNames.bg} />
     </section>
