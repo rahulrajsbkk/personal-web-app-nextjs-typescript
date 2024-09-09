@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Scrollbars from "react-custom-scrollbars";
-import dynamic from "next/dynamic";
-// import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from "react-animated-cursor";
 import Header from "../../components/Header";
 import MainNavbar from "../../components/MainNavbar";
 import classNames from "./MainLayout.module.scss";
@@ -16,12 +15,6 @@ type CursorParams = {
   outerScale: number;
 };
 
-const AnimatedCursor = dynamic<CursorParams>(
-  () => import("react-animated-cursor"),
-  {
-    ssr: false,
-  }
-);
 
 function MainLayout({ children }): JSX.Element {
   const [activeNav, setActiveNav] = useState(false);

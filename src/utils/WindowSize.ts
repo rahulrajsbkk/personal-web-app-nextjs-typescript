@@ -1,34 +1,28 @@
 import { useEffect, useState } from "react";
 
-function getWindowDimensions(): {
-  width: number;
-  height: number;
-} {
+function getWindowDimensions() {
   if (typeof window !== "undefined") {
     const { innerWidth: width, innerHeight: height } = window;
-    return {
-      width,
-      height,
-    };
+    return { width, height };
   }
+  // Provide a fallback for SSR, where window is undefined
+  return { width: 0, height: 0 };
 }
 
-export default function useWindowDimensions(): {
-  width: number;
-  height: number;
-} {
-  const [windowDimensions, setWindowDimensions] = useState({
-    width: 0,
-    height: 0,
-  });
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions);
 
   useEffect(() => {
-    setWindowDimensions(getWindowDimensions());
     function handleResize() {
       setWindowDimensions(getWindowDimensions());
     }
 
-    window.addEventListener("resize", handleResize);
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      // Set initial dimensions once the component is mounted
+      setWindowDimensions(getWindowDimensions());
+    }
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

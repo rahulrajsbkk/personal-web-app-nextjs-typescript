@@ -13,7 +13,8 @@ export default function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <Provider store={store}>
       <MainLayout>
-        <AnimatePresence exitBeforeEnter initial={false}>
+        <AnimatePresence mode="wait" initial={false}>
+          {/* @ts-ignore */}
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
         <ToastContainer

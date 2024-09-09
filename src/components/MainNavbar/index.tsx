@@ -63,32 +63,32 @@ function MainNavbar({ activated }): JSX.Element {
         </div>
         <div className={classNames.navMenu}>
           <Link href="/">
-            <a
+            <div
               className={`${classNames.menuItem} ${
                 classNames[(pathname.toLowerCase() === "/").toString()]
               }`}
             >
               Home
-            </a>
+            </div>
           </Link>
           <Link href="/about">
-            <a
+            <div
               className={`${classNames.menuItem} ${
                 classNames[(pathname.toLowerCase() === "/about").toString()]
               }`}
             >
               About
-            </a>
+            </div>
           </Link>
           <div className={classNames.vl}></div>
           <Link href="/contact">
-            <a
+            <div
               className={`${classNames.menuItem} ${
                 classNames[(pathname.toLowerCase() === "/contact").toString()]
               }`}
             >
               Contact
-            </a>
+            </div>
           </Link>
         </div>
       </div>

@@ -10,7 +10,7 @@ function FooterNavbar(): JSX.Element {
     <nav className={classNames.footerNavbar}>
       <div className={classNames.navMenu}>
         <Link href="/about">
-          <a
+          <div
             className={`${classNames.menuItem} ${
               classNames[(pathname.toLowerCase() === "/about").toString()]
             }`}
@@ -28,10 +28,10 @@ function FooterNavbar(): JSX.Element {
               />
             </div>
             <span>About</span>
-          </a>
+          </div>
         </Link>
         <Link href="/">
-          <a
+          <div
             className={`${classNames.menuItem} ${
               classNames[(pathname.toLowerCase() === "/").toString()]
             }`}
@@ -49,10 +49,10 @@ function FooterNavbar(): JSX.Element {
               />
             </div>
             <span>Home</span>
-          </a>
+          </div>
         </Link>
         <Link href="/contact">
-          <a
+          <div
             className={`${classNames.menuItem} ${
               classNames[(pathname.toLowerCase() === "/contact").toString()]
             }`}
@@ -70,7 +70,7 @@ function FooterNavbar(): JSX.Element {
               />
             </div>
             <span>Contact</span>
-          </a>
+          </div>
         </Link>
       </div>
     </nav>
