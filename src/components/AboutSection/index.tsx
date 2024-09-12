@@ -79,6 +79,17 @@ function AboutSection(): JSX.Element {
               >
                 <span>@rahulrajsbkk</span>
               </a>
+            </div>{" "}
+            <div className={classNames.item}>
+              CodeMentor:&nbsp;&nbsp;
+              <wbr />
+              <a
+                href="https://www.codementor.io/@rahulrajsbkk"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>@rahulrajsbkk</span>
+              </a>
             </div>
           </div>
           <a
